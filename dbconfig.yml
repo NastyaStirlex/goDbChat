@@ -1,0 +1,6 @@
+# Database migration tool: https://github.com/rubenv/sql-migrate
+development:
+  dialect: postgres
+  datasource: host=${DB_HOST} port=${DB_PORT} dbname=${POSTGRES_DB} user=${POSTGRES_USER} password=${POSTGRES_PASSWORD} sslmode=${DB_SSL_MODE} search_path=${DB_SCHEMA}
+  dir: migrations
+  table: migrations
